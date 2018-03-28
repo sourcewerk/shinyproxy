@@ -36,8 +36,8 @@
 	<div th:replace="../fragments/navbar :: navbar"></div>
 	
 	<!-- content -->
-    <iframe id="shinyframe" th:src="${container}" width="100%"></iframe>
-    <div class="loading"><div class="loading-txt">Launching <span th:text="${appTitle}"></span>...</div></div>
+    <iframe id="shinyframe" th:src="${container}" width="100%" frameBorder="0"></iframe>
+    <div class="loading"><div class="loading-txt">Starte <span th:text="${appTitle}"></span>...</div></div>
     
 	<script type="text/javascript" th:inline="javascript">
 		function setShinyframeHeight() {
